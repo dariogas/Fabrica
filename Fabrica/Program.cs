@@ -15,16 +15,13 @@ switch (operacion.ToLower())
 {
 	case "suma":
 		resultado = num1 + num2;
-        Console.WriteLine($"El resultado de la operacion es: {resultado}");
         break;
 	case "resta":
 		resultado = num1 - num2;
-        Console.WriteLine($"El resultado de la operacion es: {resultado}");
 
         break;
 	case "multiplicacion":
 		resultado = num1 * num2;
-        Console.WriteLine($"El resultado de la operacion es: {resultado}");
 
         break;
 	case "division":
@@ -33,6 +30,9 @@ switch (operacion.ToLower())
 
         break;
 	default:
+		resultado=0;
 		Console.WriteLine("Elija una opcion correcta");
 		break;
 }
+Console.WriteLine($"El resultado de la operacion es: {resultado}");
+
