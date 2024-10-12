@@ -4,6 +4,31 @@
 
 <p role="status">Cantidad de Profesores: @profes</p>
 
+
+<form action="/" method="post">
+    
+    <h2>Datos Profesor</h2>
+        
+    <p>
+    <label for="name">Nombre: </label>
+    <input type="text" name="name" id="name" />
+     </p>
+     <p>
+    <label for="lastname">Apellido: </label>
+    <input type="text" name="lastname" id="lastname" />
+     </p>
+    <p>
+    <label for="date">fecha nacimiento: </label>
+    <input type="date" name="date" id="date" />
+     </p>
+     <p>
+    <label for="experiencia">Años experiencia: </label>
+    <input type="number" name="experiencia" id="experiencia"/>
+    </p>
+
+    
+</form>
+
 <button class="btn btn-primary" @onclick="AddProfesor">Agregar</button>
 
 <table class="table table-striped">
