@@ -1,0 +1,30 @@
+﻿@page "/sitio"
+@rendermode InteractiveServer
+
+<PageTitle>Peliculas</PageTitle>
+
+<h2>Peliculas que vi</h2>
+<p style="color:blue"> Agregar pelicula</p>
+
+<form action="/" method="post">
+	<label for="titulo">Titulo: </label>
+	<input type="text" id="titulo" name="titulo" required /><br />
+
+	<label for="calificacion">Calificacion: </label>
+	<select name="Calificacion">
+		<option value="1"> 1 estrella</option>
+		<option value="2"> 2 estrellas</option>
+		<option value="3"> 3 estrellas</option>
+		<option value="4"> 4 estrellas</option>
+		<option value="5"> 5 estrellas</option>
+
+	</select>
+
+</form>
+
+<button class="btn btn-primary">Agregar</button>
+
+
+@code {
+
+}
